@@ -1,0 +1,241 @@
+/* 关于页面的css
+.main-container {
+  text-align: center;
+  font-size: 2em;
+} */
+
+.header {
+    height: 92%;
+}
+/* 头部的css代码 */
+
+@-webkit-keyframes animations-one{
+  3%{bottom: 9px;}
+  6%{bottom: -16px}
+  12%{bottom: 0px}
+  20%{bottom: -16px}
+  /* 100%{bottom: -16px} */
+}
+
+@keyframes animations-one{
+  3%{bottom: 9px;}
+  6%{bottom: -16px}
+  12%{bottom: 0px}
+  20%{bottom: -16px}
+  /* 100%{bottom: -16px} */
+}
+
+
+@-webkit-keyframes animations-two{
+  20%{bottom: -16px}
+  23%{bottom: 9px}
+  26%{bottom: -16px}
+  32%{bottom: 0px}
+  40%{bottom: -16px}
+ 
+}
+
+
+@keyframes animations-two{
+  20%{bottom: -16px}
+  23%{bottom: 9px}
+  26%{bottom: -16px}
+  32%{bottom: 0px}
+  40%{bottom: -16px}
+ 
+}
+
+@-webkit-keyframes animations-three{
+  40%{bottom: -16px}
+  43%{bottom: 9px}
+  46%{bottom: -16px}
+  52%{bottom: 0px}
+  60%{bottom: -16px}
+
+}
+
+@keyframes animations-three{
+  40%{bottom: -16px}
+  43%{bottom: 9px}
+  46%{bottom: -16px}
+  52%{bottom: 0px}
+  60%{bottom: -16px}
+
+}
+@-webkit-keyframes animations-four{
+  60%{bottom: -16px}
+  63%{bottom: 9px}
+  66%{bottom: -16px}
+  72%{bottom: 0px}
+  80%{bottom: -16px}
+}
+@keyframes animations-four{
+  60%{bottom: -16px}
+  63%{bottom: 9px}
+  66%{bottom: -16px}
+  72%{bottom: 0px}
+  80%{bottom: -16px}
+}
+
+.header-container {
+  color: #fff;
+  background:-webkit-gradient(linear,left top, right top,from(#1c2b36),color-stop(#4a6170),to(#aaa));
+  background:-o-linear-gradient(left,#1c2b36,#4a6170,#aaa);
+  background:linear-gradient(90deg,#1c2b36,#4a6170,#aaa);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  height: 60px;
+}
+
+
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin:0 180px;
+  margin-left: 100px
+}
+
+
+
+.header-logo ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative
+
+  }
+
+
+
+.header-logo ul li{
+       
+      margin-left: 10px;
+      position: absolute;
+    }
+
+
+
+.header-logo ul li:nth-child(1){
+      left: 0px;
+      -webkit-animation: animations-one 6s;
+              animation: animations-one 6s;
+      -webkit-animation-iteration-count:infinite;
+              animation-iteration-count:infinite;
+      
+      }
+
+
+
+.header-logo ul li:nth-child(2){
+      left: 30px;
+      -webkit-animation: animations-two 6s;
+              animation: animations-two 6s;
+      -webkit-animation-iteration-count:infinite;
+              animation-iteration-count:infinite;
+      
+    }
+
+
+
+.header-logo ul li:nth-child(3){left: 60px;
+      -webkit-animation: animations-three 6s;
+              animation: animations-three 6s;
+      -webkit-animation-iteration-count:infinite;
+              animation-iteration-count:infinite;
+    }
+
+
+
+.header-logo ul li:nth-child(4){
+      left:90px;
+      -webkit-animation: animations-four 6s;
+              animation: animations-four 6s;
+      -webkit-animation-iteration-count:infinite;
+              animation-iteration-count:infinite;
+      
+      }
+
+
+.header-nav{
+  margin-left: 15%
+}
+
+
+.header-nav a{
+    padding: 0 30px;
+    line-height: 60px;
+  }
+
+
+.header-nav a:hover{
+      color: #8097af;
+    }
+.header-nav-active{
+  color: burlywood;
+}
+
+.header-user{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  width: 11%
+ /* justify-content: space-between */
+ /* space-around; */
+}
+
+.header-user ul{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between
+
+  }
+
+.header-user ul li{
+     -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+             user-select: none;
+   }
+
+.header-user ul li:nth-child(3){
+      margin-left: 4px;
+    }
+
+.header-user ul li:nth-child(1){
+       
+      color:#1c2b36;
+     }
+
+.header-user ul li:nth-child(3):hover{
+      color: #1c2b36;
+   }
+@media (max-width:620px){
+  
+   .header-nav{
+        margin-left: 0px;
+  }
+}
+@media (max-width:1350px){
+  .header-user{
+    display: none;
+  }
+  }
+
+
+  
